@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fifty Phonogram Master</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>TO BE A MASTER OF FIFTY PHONOGRAM</h1>
+
+    <fieldset>
+        <form>
+        <legend>First select the rows (1-10) and times</legend>
+        <p>
+            <label for="start_row">START</label>
+            <input type="text" name="test_range" id="start_row" value="1">
+        </p>
+        <p>
+            <label for="end_row">END  </label>
+            <input type="text" name="test_range" id="end_row" value="9">
+        </p>
+        <p>
+            <label for="test_times">TIMES</label>
+            <input type="text" name="test_times" id="test_times" value="-1">
+        </p>
+        <p>
+            <button type="submit" class="confirm">
+                <strong>Confirm</strong>
+            </button>
+            <button type="submit" class="reset">
+                <strong>Reset</strong>
+            </button>
+        </p>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            Second ENJOY the GAME !!!
+        </legend>
+        <p>
+            <strong>PROGRESS : </strong><span id="progress_id">0/0</span>
+        </p>
+        <p>
+            <strong>RESULT : </strong><span id="result_id"></span>
+        </p>
+        <p class="pcenter">
+            <audio controls autoplay>
+                <source src="" type="audio/mp3">
+            </audio>
+        </p>
+        <p class="pcenter">
+            <button class="wrong"></button>
+            <button class="ans_show">SHOW</button>
+            <button class="right"></button>
+        </p>
+    </fieldset>
+    <script src="main.js"></script>
+</body>
+</html>
